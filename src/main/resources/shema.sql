@@ -7,3 +7,9 @@ create table users (
 
     registration_date TIMESTAMP
 );
+
+create table items (
+    id int GENERATED ALWAYS AS  IDENTITY PRIMARY KEY,
+    user_Id int NOT NULL,
+    url VARCHAR
+);
